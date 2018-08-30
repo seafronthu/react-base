@@ -14,10 +14,10 @@ cd react-appload-on-demand
 
 npm install
 
-**development:**
+// development
 npm start
 
-**production:**
+// production:
 npm run build
 node ./server/index.js
 
