@@ -1,0 +1,82 @@
+font-animate = 0.35s ease-in-out infinite alternate
+.todo-container
+  .todo-title
+    padding 0.4rem 0
+    text-align center
+    text-shadow 4px -4px 1px #e0c3fc
+    color #b721ff
+    font-size 0.48rem
+  .input-container
+    display flex
+    align-items center
+    justify-content center
+    padding 0 0.15rem
+    .input-todo-increase
+      flex 1 1 auto
+      height 0.8rem
+      border 0.02rem solid #8EC5FC
+      border-right none
+      border-radius 0.1rem 0 0 0.1rem / 0.1rem 0 0 0.1rem
+      overflow hidden
+      .input-todo-content
+        width calc(100% - 0.15rem)
+        height 100%
+        margin-left 0.15rem
+        line-height 0.8rem
+        font-size 0.32rem
+        color #FC00FF
+        letter-spacing 0.05rem
+    .input-todo-btn
+      width 1.5rem
+      height 0.84rem
+      line-height 0.84rem
+      text-align center
+      background-image linear-gradient(19deg, #21D4FD, #B721FF)
+      color #ffffff
+      font-size 0.36rem
+      border-radius 0 0.1rem 0.1rem 0 / 0 0.1rem 0.1rem 0
+      transition opacity 0.2s ease-in-out
+      &:active
+        opacity 0.6
+  .todo-loading
+    padding 0.15rem
+    text-align: center
+    span
+      display inline-block
+      color #4158D0
+      font-size 0.36rem
+      font-weight bold
+      text-shadow 4px -4px 1px #9599E2
+      &:nth-child(2n-1)
+        animation font-up font-animate
+      &:nth-child(2n)
+        animation font-down font-animate
+  .todo-list
+    margin-top 0.15rem
+    overflow hidden
+    .todo-list-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding 0.15rem
+      background-image linear-gradient(45deg, #FA8BFF, #2BD2FF, #2BFF88)
+      span
+        color #ffffff
+      i
+        color #FF6A88
+
+
+
+
+
+
+@keyframes font-up
+  from
+    transform translateY(0rem)
+  to
+    transform translateY(-0.1rem)
+@keyframes font-down
+  from
+    transform translateY(0rem)
+  to
+    transform translateY(0.1rem)

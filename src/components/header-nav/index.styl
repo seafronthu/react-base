@@ -1,0 +1,27 @@
+.header-nav
+  display flex
+  justify-content space-between
+  align-items center
+  font-size 0.32rem
+  width 100%
+  text-align center
+  height 0.8rem
+  color #ffffff
+  line-height 0.8rem
+  background-image linear-gradient(to right, #8590fb, #4cc2d7)
+  .header-column-icon
+    display flex
+    flex-flow column
+    align-content space-between
+    .column
+      width 100%
+      display flex
+      justify-content space-between
+      .item
+        border 0.02rem solid #ffffff
+        width 0.2rem
+        height 0.2rem
+        margin 0.05rem 0.05rem 0 0
+        transition transform 0.2s ease-in-out
+        &.active
+          transform rotate(45deg)
